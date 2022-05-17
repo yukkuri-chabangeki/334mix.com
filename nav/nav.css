@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    background-image: url(./background.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: calc(100vh - 1.5em);
+}
+
+#title {
+    font-size: min(40vh, 6vw);
+    font-weight: bold;
+}
+
+.title {
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    color: #ffffff;
+}
+
+#link {
+    background-color: #303030;
+    text-align: right;
+    height: 1.5em;
+}
+
+.link {
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 1em;
+}
