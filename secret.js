@@ -10,6 +10,7 @@ document.addEventListener('keypress', (event) => {
     if(count == 7){
         var result = window.confirm('あなたは秘密の部屋への入り口を見つけたようです...!\n秘密の部屋に移動しますか？');
         if(result){
+            document.cookie = 'gimmickClear=true';
             window.location.href = "secret.html";
         }else{
             count = 0;
