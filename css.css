@@ -1,3 +1,4 @@
+/*ゆっくりしていってね!!!*/
 html {
     background-image: url(./images/background.webp);
     background-position: right 0% bottom 0%;
@@ -5,11 +6,41 @@ html {
     background-size: cover;
 }
 
+/*余計な余白を削除*/
 body {
     margin: 0px;
     padding: 0px;
 }
 
+/*画像を扱いやすくする*/
+img {
+    display: inline-block;
+    vertical-align: top;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/*表*/
+table {
+    display: inline-block;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    box-sizing: border-box;
+    border: ridge 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+th:empty,
+td:empty {
+    background-image: linear-gradient(45deg, transparent 49%, black 49%, black 51%, transparent 51%, transparent);
+}
+
+/*ページの基本レイアウト*/
 #header {
     display: block;
     box-sizing: border-box;
@@ -31,49 +62,50 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-img {
-    display: inline-block;
-    vertical-align: top;
-    object-fit: contain;
-    max-width: 100%;
-}
-
+/*コメント付きの画像*/
 .image_with_comment {
     display: inline-block;
     vertical-align: top;
     background-color: #aaaaaa;
 }
 
-.microsoft_logo{
+div.image_with_comment p {
+    color: #000000;
+}
+
+/*Microsoftロゴ*/
+.microsoft_logo {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    width:23px;
+    width: 23px;
 }
-div.microsoft_logo{
+
+div.microsoft_logo {
     font-size: 25%;
 }
 
-#microsoft_logo1{
+#microsoft_logo1 {
     background-color: #f35022;
     grid-row-end: 2;
 }
-#microsoft_logo2{
+
+#microsoft_logo2 {
     background-color: #80bb03;
     grid-row-end: 2;
 }
-#microsoft_logo3{
+
+#microsoft_logo3 {
     background-color: #03a5f0;
 }
-#microsoft_logo4{
+
+#microsoft_logo4 {
     background-color: #ffb903;
 }
-#microsoft_logotext{
-    font-size:medium;
+
+#microsoft_logotext {
+    font-size: medium;
     color: #666666;
     grid-row-start: 1;
     grid-row-end: 3;
-}
-div.image_with_comment p {
-    color: #000000;
 }
