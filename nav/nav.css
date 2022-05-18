@@ -8,6 +8,10 @@ body {
     background-repeat: repeat-x;
     background-size: contain;
     height: calc(100vh - 1.5em);
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: clip;
+    white-space: nowrap;
 }
 
 #title {
@@ -30,6 +34,10 @@ p {
     background-color: #303030;
     text-align: right;
     height: 1.5em;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: clip;
+    white-space: nowrap;
 }
 
 .link {

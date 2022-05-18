@@ -34,7 +34,8 @@ body {
 img {
     display: inline-block;
     vertical-align: top;
-    max-width: 90vw;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .image_with_comment {
@@ -72,4 +73,7 @@ div.microsoft_logo{
     color: #666666;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+div.image_with_comment p {
+    color: #000000;
 }
