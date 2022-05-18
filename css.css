@@ -44,6 +44,36 @@ img {
     background-color: #aaaaaa;
 }
 
+.microsoft_logo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width:23px;
+}
+div.microsoft_logo{
+    font-size: 25%;
+}
+
+#microsoft_logo1{
+    background-color: #f35022;
+    grid-row-end: 2;
+}
+#microsoft_logo2{
+    background-color: #80bb03;
+    grid-row-end: 2;
+}
+#microsoft_logo3{
+    background-color: #03a5f0;
+}
+#microsoft_logo4{
+    background-color: #ffb903;
+}
+#microsoft_logotext{
+    font-size:medium;
+    color: #666666;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 div.image_with_comment p {
     color: #000000;
 }
