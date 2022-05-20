@@ -7,103 +7,16 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>ゆっくりの歴史</title>
     <link href="../../css.css" rel="stylesheet" type="text/css">
+    <link href="../../files/timeline.css" rel="stylesheet" type="text/css">
     <style>
-        .timeline {
-            --tl-bg-color: #fff;
-            position: relative;
-            padding: 20px 30px 20px 100px;
-            background-color: #ddd;
-            margin: 0;
-            display: block;
-            list-style: none;
-        }
-
-        .timeline::before {
-            --tl-bar-width: 4px;
-            content: "";
-            position: absolute;
-            top: 20px;
-            bottom: 20px;
-            left: calc(70px - var(--tl-bar-width) / 2);
-            width: var(--tl-bar-width);
-            background-color: var(--tl-bg-color);
-            border-radius: calc(var(--tl-bar-width) / 2);
-        }
-
-        .timeline>.content {
-            --tl-marker-size: 20px;
-            position: relative;
-            margin: 10px 0;
-            padding: 10px;
-            display: block;
-            background-color: var(--tl-bg-color);
-            list-style: none;
-            border-radius: 10px;
-        }
-
-        /* 吹き出し部分 */
-        .timeline>.content:before {
-            --tl-cursor-size: 20px;
-            position: absolute;
-            top: calc(50% - var(--tl-cursor-size) / 2);
-            left: calc(-1 * var(--tl-cursor-size) / 2);
-            width: var(--tl-cursor-size);
-            height: var(--tl-cursor-size);
-            content: '';
-            display: block;
-            background-color: var(--tl-bg-color);
-            transform: rotate(45deg);
-        }
-
-        /* 丸の部分 */
-        .timeline>.content:after {
-            position: absolute;
-            top: calc(50% - calc(var(--tl-marker-size) / 2));
-            left: -40px;
-            width: var(--tl-marker-size);
-            height: var(--tl-marker-size);
-            content: '';
-            display: block;
-            background-color: var(--tl-bg-color);
-            border-radius: 50%;
-        }
-
-        .content-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-        }
-
-        .date {
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 50%;
-            left: -45px;
-            transform: translate(-100%, -50%);
-            font-size: 12px;
-            line-height: 14px;
-            color: red;
-            font-weight: 700;
-            text-shadow: #444 0 0 2px;
-            text-align: center;
-        }
-
-        .center {
-            text-align: center;
-        }
-
         #end_history {
             min-width: 90%;
             text-align: center;
             font-size: xx-large;
             font-weight: 500;
-        }
-
-        #history_footer {
-            width: 100%;
-            height: 50%;
+            background: linear-gradient(90deg, yellow, red);
+            color: transparent;
+            background-clip: text;
         }
     </style>
 </head>
@@ -128,7 +41,7 @@
                 人工音声ソフト「<a href="https://w.atwiki.jp/softalk/">Softalk</a>」を使い、ゆっくりの画像をアバターとした<a
                     href="https://www.nicovideo.jp/watch/sm2344613">実況動画</a>がニコニコ動画にて初めて投稿される。
             </li>
-            <div class="center">|<br>以降実況動画だけでなく他の動画でも使われるようになった<br>|</div>
+            <center>|<br>以降実況動画だけでなく他の動画でも使われるようになった<br>|</center>
             <li class="content">
                 <span class="date">2020/10?</span>
                 <span class="content-title">ゆっくり使用の自由化</span>
@@ -143,6 +56,5 @@
         </ul>
     </div>
 </body>
-<footer id="history_footer">&nbsp;</footer>
 
 </html>

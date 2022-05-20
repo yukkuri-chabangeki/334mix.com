@@ -1,0 +1,81 @@
+.timeline {
+    --tl-bg-color: #fff;
+    position: relative;
+    padding: 20px 30px 20px 100px;
+    background-color: #ddd;
+    margin: 0;
+    display: block;
+    list-style: none;
+}
+
+.timeline::before {
+    --tl-bar-width: 4px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: calc(70px - var(--tl-bar-width) / 2);
+    width: var(--tl-bar-width);
+    background-color: var(--tl-bg-color);
+    border-radius: calc(var(--tl-bar-width) / 2);
+}
+
+.timeline>.content {
+    --tl-marker-size: 20px;
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+    background-color: var(--tl-bg-color);
+    list-style: none;
+    border-radius: 10px;
+}
+
+/* 吹き出し部分 */
+.timeline>.content:before {
+    --tl-cursor-size: 20px;
+    position: absolute;
+    top: calc(50% - var(--tl-cursor-size) / 2);
+    left: calc(-1 * var(--tl-cursor-size) / 2);
+    width: var(--tl-cursor-size);
+    height: var(--tl-cursor-size);
+    content: '';
+    display: block;
+    background-color: var(--tl-bg-color);
+    transform: rotate(45deg);
+}
+
+/* 丸の部分 */
+.timeline>.content:after {
+    position: absolute;
+    top: calc(50% - calc(var(--tl-marker-size) / 2));
+    left: -40px;
+    width: var(--tl-marker-size);
+    height: var(--tl-marker-size);
+    content: '';
+    display: block;
+    background-color: var(--tl-bg-color);
+    border-radius: 50%;
+}
+
+.content-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: -45px;
+    transform: translate(-100%, -50%);
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    font-weight: 700;
+    text-shadow: #444 0 0 2px;
+    text-align: center;
+}
