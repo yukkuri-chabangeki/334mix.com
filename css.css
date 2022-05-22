@@ -40,6 +40,10 @@ td:empty {
     background-image: linear-gradient(45deg, transparent 49%, black 49%, black 51%, transparent 51%, transparent);
 }
 
+h3{
+    border-bottom: groove 10px black;   
+}
+
 /*ページの基本レイアウト*/
 #header {
     display: block;
@@ -68,9 +72,17 @@ td:empty {
     vertical-align: top;
     background-color: #aaaaaa;
 }
-
 div.image_with_comment p {
     color: #000000;
+}
+
+/*コメント付きの画像(横並び)*/
+.image_with_comment_row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #aaaaaa;
+    justify-items: center;
+    align-items: center;
 }
 
 /*Microsoftロゴ*/
@@ -80,32 +92,58 @@ div.image_with_comment p {
     grid-template-rows: 50% 50%;
     width: 23px;
 }
-
 div.microsoft_logo {
     font-size: 25%;
 }
-
 #microsoft_logo1 {
     background-color: #f35022;
     grid-row-end: 2;
 }
-
 #microsoft_logo2 {
     background-color: #80bb03;
     grid-row-end: 2;
 }
-
 #microsoft_logo3 {
     background-color: #03a5f0;
 }
-
 #microsoft_logo4 {
     background-color: #ffb903;
 }
-
 #microsoft_logotext {
     font-size: medium;
     color: #666666;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+/* 概要欄 */
+.overview_table{
+    display: table;
+}
+table.overview_table td{
+    background-color: white;
+    background-clip: padding-box;
+    border: ridge 3px rgba(0,0,0,0);
+}
+table.overview_table font{
+    text-align: center;
+}
+
+.table_bold{
+    font-weight: 800;
+}
+
+/* 注釈 */
+.note{
+    font-size: 80%;
+}
+
+/* 取り消し線 */
+.strike{
+    text-decoration: line-through;
+}
+
+/* Coyu.Live */
+.coyu_live_color{
+    background-color: #D59500;
 }
