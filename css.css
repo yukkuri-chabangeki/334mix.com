@@ -6,6 +6,10 @@ html {
     background-size: cover;
 }
 
+html * {
+    box-sizing: border-box;
+}
+
 /*余計な余白を削除*/
 body {
     margin: 0px;
@@ -15,7 +19,6 @@ body {
 /*画像を扱いやすくする*/
 img {
     display: inline-block;
-    vertical-align: top;
     object-fit: contain;
     max-width: 100%;
 }
@@ -23,16 +26,23 @@ img {
 /*表*/
 table {
     display: inline-block;
-    box-sizing: border-box;
     border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    text-align: center;
+    background-color: #e0e8f0;
+}
+
+td {
+    text-align: left;
 }
 
 th,
 td {
-    box-sizing: border-box;
     border: ridge 5px;
     padding: 5px;
-    text-align: left;
 }
 
 th:empty,
@@ -43,7 +53,6 @@ td:empty {
 /*ページの基本レイアウト*/
 #header {
     display: block;
-    box-sizing: border-box;
     border: none;
     width: 100%;
     height: 10vh;
@@ -51,13 +60,12 @@ td:empty {
 
 #page {
     display: block flow-root;
-    box-sizing: border-box;
-    margin-left: min(5%, 4em);
-    margin-right: min(5%, 4em);
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 1em;
     padding: 1em;
     min-width: 90%;
-    width: calc(100% - 8em);
+    width: 90%;
     min-height: calc(90vh - 1em);
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -65,12 +73,18 @@ td:empty {
 /*コメント付きの画像*/
 .image_with_comment {
     display: inline-block;
-    vertical-align: top;
     background-color: #aaaaaa;
 }
 
 div.image_with_comment p {
     color: #000000;
+}
+
+/*Twitter埋め込み*/
+.twitter {
+    display: inline-block;
+    width: 100%;
+    max-width: 550px;
 }
 
 /*Microsoftロゴ*/
