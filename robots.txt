@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /nav/
+Disallow: /secret.html
 
 Sitemap: https://334mix.com/sitemap.xml
