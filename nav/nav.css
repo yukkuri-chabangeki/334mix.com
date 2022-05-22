@@ -4,7 +4,7 @@ body {
 }
 
 #header {
-    background-image: url(./background.png);
+    background-image: url(./background.webp);
     background-repeat: repeat-x;
     background-size: contain;
     height: calc(100vh - 1.5em);
